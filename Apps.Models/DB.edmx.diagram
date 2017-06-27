@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4347eebad5bc4aa1bb240674ec01dd92" Name="Diagram1" ZoomLevel="93" >
+        <EntityTypeShape EntityType="DB.DEF_CaseType" PointX="20.75" PointY="14.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.DEF_Defect" PointX="16" PointY="17.25" Width="1.5" />
+        <EntityTypeShape EntityType="DB.DEF_TestCase" PointX="13.75" PointY="6.625" Width="1.5" />
+        <EntityTypeShape EntityType="DB.DEF_TestCaseRelation" PointX="16" PointY="3.125" Width="1.5" />
+        <EntityTypeShape EntityType="DB.DEF_TestCaseSteps" PointX="16" PointY="5.625" Width="1.5" />
+        <EntityTypeShape EntityType="DB.DEF_TestJobs" PointX="13.75" PointY="10.25" Width="1.5" />
+        <EntityTypeShape EntityType="DB.DEF_TestJobsDetail" PointX="16" PointY="8.625" Width="1.5" />
+        <EntityTypeShape EntityType="DB.DEF_TestJobsDetailItem" PointX="16" PointY="12" Width="1.5" />
+        <EntityTypeShape EntityType="DB.DEF_TestJobsDetailRelation" PointX="18.25" PointY="7.625" Width="1.5" />
+        <EntityTypeShape EntityType="DB.DEF_TestJobsDetailSteps" PointX="18.25" PointY="11.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysAreas" PointX="0.75" PointY="0.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysException" PointX="22.75" PointY="7.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysLog" PointX="0.75" PointY="22.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysModule" PointX="0.75" PointY="8.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysModuleOperate" PointX="3" PointY="6.625" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysPosition" PointX="3.75" PointY="9.5" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysRight" PointX="3" PointY="13.625" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysRightOperate" PointX="5.25" PointY="20.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysRole" PointX="0.75" PointY="13.5" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysSample" PointX="20.75" PointY="20.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysSettings" PointX="20.75" PointY="11.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysStruct" PointX="3.75" PointY="16.875" Width="1.5" />
+        <EntityTypeShape EntityType="DB.SysUserConfig" PointX="8.25" PointY="28.625" Width="1.5" />
+        <EntityTypeShape EntityType="DB.V_DEF_Defect" PointX="18.75" PointY="20.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.V_DEF_RPT_DefectReport" PointX="20.75" PointY="7.75" Width="1.5" />
+        <AssociationConnector Association="DB.FK_DEF_Defect_DEF_TestJobs" />
+        <AssociationConnector Association="DB.FK_DEF_TestCaseRelation_DEF_TestCase" />
+        <AssociationConnector Association="DB.FK_DEF_TESTCASESTEPS_REFERENCE_DEF_TESTCASE" />
+        <AssociationConnector Association="DB.FK_DEF_TESTJOBDETAIL_REFERENCE_DEF_TESTCASE" />
+        <AssociationConnector Association="DB.FK_DEF_TESTJOBSDETAILITEM_REFERENCE_DEF_TESTCASE" />
+        <AssociationConnector Association="DB.FK_DEF_TESTJOBSDETAIL_REFERENCE_DEF_TESTJOBS" />
+        <AssociationConnector Association="DB.FK_DEF_TestJobsDetailRelation_DEF_TestJobsDetail" />
+        <AssociationConnector Association="DB.FK_DEF_TESTJOBSDETAILSTEPS_REFERENCE_DEF_TESTJOBSDETAILITEM" />
+        <AssociationConnector Association="DB.FK_SysAreas_SysAreas" />
+        <AssociationConnector Association="DB.FK_SysModule_SysModule" />
+        <AssociationConnector Association="DB.FK_SysModuleOperate_SysModule" />
+        <AssociationConnector Association="DB.FK_SysRight_SysModule" />
+        <AssociationConnector Association="DB.FK_SysPosition_SysStruct" />
+        <AssociationConnector Association="DB.FK_SysRight_SysRole" />
+        <AssociationConnector Association="DB.FK_SysRightOperate_SysRight" />
+        <AssociationConnector Association="DB.FK_SysStruct_SysStruct" />
+        <EntityTypeShape EntityType="DB.SysUser" PointX="6" PointY="10.125" Width="1.5" />
+        <AssociationConnector Association="DB.FK_SysUserConfig_SysUser" />
+        <AssociationConnector Association="DB.SysRoleSysUser" />
+        <EntityTypeShape EntityType="DB.MIS_Article" PointX="11.25" PointY="17.5" Width="1.5" />
+        <EntityTypeShape EntityType="DB.MIS_Article_Albums" PointX="13.5" PointY="18.625" Width="1.5" />
+        <EntityTypeShape EntityType="DB.MIS_Article_Category" PointX="9" PointY="19.125" Width="1.5" />
+        <EntityTypeShape EntityType="DB.MIS_Article_Comment" PointX="11.25" PointY="13.125" Width="1.5" />
+        <EntityTypeShape EntityType="DB.MIS_WebIM_CommonTalk" PointX="0.75" PointY="19.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.MIS_WebIM_Message" PointX="18.75" PointY="1" Width="1.5" />
+        <EntityTypeShape EntityType="DB.MIS_WebIM_Message_Rec" PointX="21" PointY="1.25" Width="1.5" />
+        <EntityTypeShape EntityType="DB.MIS_WebIM_RecentContact" PointX="0.75" PointY="16.75" Width="1.5" />
+        <AssociationConnector Association="DB.FK_MIS_Article_Albums_MIS_Article" />
+        <AssociationConnector Association="DB.FK_MIS_Article_Comment_MIS_Article" />
+        <AssociationConnector Association="DB.FK_MIS_Article_MIS_Article_Category" />
+        <AssociationConnector Association="DB.FK_MIS_Article_SysUser" />
+        <AssociationConnector Association="DB.FK_MIS_Article_SysUser1" />
+        <AssociationConnector Association="DB.FK_MIS_Article_Category_MIS_Article_Category" />
+        <AssociationConnector Association="DB.FK_MIS_Article_Comment_SysUser" />
+        <AssociationConnector Association="DB.FK_MIS_MESS_REFERENCE_MIS_MESS" />
+        <EntityTypeShape EntityType="DB.Flow_Form" PointX="6" PointY="1" Width="1.5" />
+        <EntityTypeShape EntityType="DB.Flow_FormAttr" PointX="6" PointY="23.375" Width="1.5" />
+        <EntityTypeShape EntityType="DB.Flow_FormContent" PointX="8.25" PointY="11" Width="1.5" />
+        <EntityTypeShape EntityType="DB.Flow_FormContentStepCheck" PointX="10.5" PointY="5.375" Width="1.5" />
+        <EntityTypeShape EntityType="DB.Flow_FormContentStepCheckState" PointX="11.25" PointY="9.375" Width="1.5" />
+        <EntityTypeShape EntityType="DB.Flow_Seal" PointX="2.75" PointY="0.75" Width="1.5" />
+        <EntityTypeShape EntityType="DB.Flow_Step" PointX="8.25" PointY="1.125" Width="1.5" />
+        <EntityTypeShape EntityType="DB.Flow_StepRule" PointX="10.5" PointY="1.625" Width="1.5" />
+        <EntityTypeShape EntityType="DB.Flow_Type" PointX="3.75" PointY="3.625" Width="1.5" />
+        <AssociationConnector Association="DB.FK_Flow_Form_Flow_Type" />
+        <AssociationConnector Association="DB.FK_Flow_FormContent_Flow_Form" />
+        <AssociationConnector Association="DB.FK_Flow_Step_Flow_Form" />
+        <AssociationConnector Association="DB.FK_Flow_FormAttr_Flow_Type" />
+        <AssociationConnector Association="DB.FK_Flow_FormContent_SysUser" />
+        <AssociationConnector Association="DB.FK_Flow_StepState_Flow_StepState" />
+        <AssociationConnector Association="DB.FK_Flow_FormContentStepCheckState_Flow_FormContentStepCheck" />
+        <AssociationConnector Association="DB.FK_Flow_FormContentStepCheckState_SysUser" />
+        <AssociationConnector Association="DB.FK_Flow_StepRule_Flow_Step" />
+        <EntityTypeShape EntityType="DB.JOB_TASKJOBS" PointX="18.75" PointY="17" Width="1.5" />
+        <EntityTypeShape EntityType="DB.JOB_TASKJOBS_LOG" PointX="21" PointY="17.25" Width="1.5" />
+        <AssociationConnector Association="DB.FK_JOB_TASKJOBS_LOG_JOB_TASKJOBS" />
+        <AssociationConnector Association="DB.FK_SysUser_SysPosition" />
+        <AssociationConnector Association="DB.FK_SysUser_SysStruct" />
+        <EntityTypeShape EntityType="DB.Spl_Product" PointX="23" PointY="4" Width="1.5" />
+        <EntityTypeShape EntityType="DB.Spl_ProductCategory" PointX="20.75" PointY="4.5" Width="1.5" />
+        <AssociationConnector Association="DB.FK_Spl_Product_Spl_ProductCategory" />
+        <EntityTypeShape EntityType="DB.Spl_Person" PointX="12.75" PointY="0.75" Width="1.5" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
